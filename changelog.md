@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/bent10/doogu/compare/v1.0.0...v1.0.1) (2022-05-05)
+
+
+### Bug Fixes
+
+* tweak keywords ([a7c1711](https://github.com/bent10/doogu/commit/a7c171147e136f4e31742f3b664f846159f81901))
+
 # 1.0.0 (2022-05-05)
 
 
