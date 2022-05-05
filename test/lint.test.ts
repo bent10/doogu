@@ -12,26 +12,26 @@ test.after('cleanup', async () => {
 })
 
 test('default', async t => {
-  await $`./dist/cli/index.js lint`
+  await $`"./dist/cli/index.js" lint`
 
   t.true(await fs.pathExists(cache))
 })
 
 test('types', async t => {
-  await $`./dist/cli/index.js lint --types`
+  await $`"./dist/cli/index.js" lint --types`
 
   t.true(await fs.pathExists(cache))
 })
 
 test('custom src', async t => {
-  await $`./dist/cli/index.js lint src/index.ts src/cli/index.ts --ext .ts --cache --cache-location ${customCache}`
+  await $`"./dist/cli/index.js" lint src/index.ts src/cli/index.ts --ext .ts --cache --cache-location ${customCache}`
 
   t.true(await fs.pathExists(customCache))
 })
 
 test('show helper', async t => {
-  const help = await $`./dist/cli/index.js lint --help`
-  const alias = await $`./dist/cli/index.js lint -h`
+  const help = await $`"./dist/cli/index.js" lint --help`
+  const alias = await $`"./dist/cli/index.js" lint -h`
   const helper_prefix =
     '\nUsage:\n  doogu lint [patterns] [options]\n\nBasic configuration:\n'
 
@@ -40,25 +40,25 @@ test('show helper', async t => {
 })
 
 test('alias options', async t => {
-  const result = await $`./dist/cli/index.js lint -v`
+  const result = await $`"./dist/cli/index.js" lint -v`
 
   t.truthy(result.toString())
 })
 
 test('options suggestions', async t => {
-  await t.throwsAsync($`./dist/cli/index.js lint --fit-`, {
+  await t.throwsAsync($`"./dist/cli/index.js" lint --fit-`, {
     instanceOf: Error,
     message: /Did you mean "--fix"?/
   })
 })
 
 test('unknown options', async t => {
-  await t.throwsAsync($`./dist/cli/index.js lint --bar`, {
+  await t.throwsAsync($`"./dist/cli/index.js" lint --bar`, {
     instanceOf: Error,
     message: /Unknown options "--bar"!/
   })
   // unknown alias
-  await t.throwsAsync($`./dist/cli/index.js lint -b`, {
+  await t.throwsAsync($`"./dist/cli/index.js" lint -b`, {
     instanceOf: Error,
     message: /Unknown options "-b"!/
   })

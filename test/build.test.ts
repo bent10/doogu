@@ -19,14 +19,14 @@ test.afterEach.always('reset', async () => {
 })
 
 test.serial('default', async t => {
-  const result = await $`./dist/cli/index.js build --outdir ${outdir}`
+  const result = await $`"./dist/cli/index.js" build --outdir ${outdir}`
   const outfiles = getPathsFromResult(result)
 
   t.deepEqual(outfiles, results.build)
 })
 
 test.serial('types', async t => {
-  const result = await $`./dist/cli/index.js build --outdir ${outdir} --types`
+  const result = await $`"./dist/cli/index.js" build --outdir ${outdir} --types`
   const outfiles = getPathsFromResult(result)
   const outdirFiles = await expandFiles(outdirPattern)
 
@@ -36,7 +36,7 @@ test.serial('types', async t => {
 
 test.serial('custom types directory', async t => {
   const result =
-    await $`./dist/cli/index.js build --outdir ${outdir} --types test/fixtures/out`
+    await $`"./dist/cli/index.js" build --outdir ${outdir} --types test/fixtures/out`
   const outfiles = getPathsFromResult(result)
   const outdirFiles = await expandFiles(outdirPattern)
 
@@ -49,7 +49,7 @@ test.serial('custom types directory', async t => {
 
 test.serial('custom src', async t => {
   const result =
-    await $`./dist/cli/index.js build src/index.ts src/cli/index.ts --outdir ${outdir}`
+    await $`"./dist/cli/index.js" build src/index.ts src/cli/index.ts --outdir ${outdir}`
   const outfiles = getPathsFromResult(result)
 
   t.deepEqual(outfiles, results.build)
@@ -57,7 +57,7 @@ test.serial('custom src', async t => {
 
 test.serial('no-bundle', async t => {
   const result =
-    await $`./dist/cli/index.js build src --bundle false --outdir ${outdir}`
+    await $`"./dist/cli/index.js" build src --bundle false --outdir ${outdir}`
   const outfiles = getPathsFromResult(result)
 
   t.deepEqual(outfiles, results.buildNoBundle)
@@ -65,21 +65,21 @@ test.serial('no-bundle', async t => {
 
 test.serial('externals', async t => {
   const result =
-    await $`./dist/cli/index.js build --outdir ${outdir} --external:yargs-parser`
+    await $`"./dist/cli/index.js" build --outdir ${outdir} --external:yargs-parser`
   const outfiles = getPathsFromResult(result)
 
   t.deepEqual(outfiles, results.build)
 })
 
 test('no files found', async t => {
-  const result = await $`./dist/cli/index.js build nodir/nofiles`
+  const result = await $`"./dist/cli/index.js" build nodir/nofiles`
 
   t.is(splitter(result.toString()).join(), 'No files found!')
 })
 
 test('show helper', async t => {
-  const help = await $`./dist/cli/index.js build --help`
-  const alias = await $`./dist/cli/index.js build -h`
+  const help = await $`"./dist/cli/index.js" build --help`
+  const alias = await $`"./dist/cli/index.js" build -h`
   const helper_prefix =
     '\nUsage:\n  doogu build [patterns] [options]\n\nSimple options:\n'
 
@@ -88,31 +88,34 @@ test('show helper', async t => {
 })
 
 test('options suggestions', async t => {
-  await t.throwsAsync($`./dist/cli/index.js build --outDir ${outdir}`, {
+  await t.throwsAsync($`"./dist/cli/index.js" build --outDir ${outdir}`, {
     instanceOf: Error,
     message: /Did you mean "--outdir"?/
   })
 })
 
 test('unknown options', async t => {
-  await t.throwsAsync($`./dist/cli/index.js build --foo`, {
+  await t.throwsAsync($`"./dist/cli/index.js" build --foo`, {
     instanceOf: Error,
     message: /Unknown options "--foo"!/
   })
   // unknown alias
-  await t.throwsAsync($`./dist/cli/index.js build -f`, {
+  await t.throwsAsync($`"./dist/cli/index.js" build -f`, {
     instanceOf: Error,
     message: /Unknown options "-f"!/
   })
 })
 
 test('ignore watch', async t => {
-  await t.throwsAsync($`./dist/cli/index.js build --outdir ${outdir} --watch`, {
-    instanceOf: Error,
-    message: /Unknown options "--watch"!/
-  })
+  await t.throwsAsync(
+    $`"./dist/cli/index.js" build --outdir ${outdir} --watch`,
+    {
+      instanceOf: Error,
+      message: /Unknown options "--watch"!/
+    }
+  )
   // watch alias
-  await t.throwsAsync($`./dist/cli/index.js build --outdir ${outdir} -w`, {
+  await t.throwsAsync($`"./dist/cli/index.js" build --outdir ${outdir} -w`, {
     instanceOf: Error,
     message: /Unknown options "-w"!/
   })
@@ -120,14 +123,14 @@ test('ignore watch', async t => {
 
 test('ignore serve', async t => {
   await t.throwsAsync(
-    $`./dist/cli/index.js build --outdir ${outdir} --serve 8000`,
+    $`"./dist/cli/index.js" build --outdir ${outdir} --serve 8000`,
     {
       instanceOf: Error,
       message: /Unknown options "--serve"!/
     }
   )
   await t.throwsAsync(
-    $`./dist/cli/index.js build --outdir ${outdir} --servedir www`,
+    $`"./dist/cli/index.js" build --outdir ${outdir} --servedir www`,
     {
       instanceOf: Error,
       message: /Unknown options "--servedir"!/

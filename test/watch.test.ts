@@ -19,7 +19,7 @@ test.serial('watcher', async t => {
     fs.writeFileSync('test/fixtures/foo.js', `// ${new Date().toString()}`)
   }, 3000)
   const command = 'echo 1'
-  const result = $`./dist/cli/index.js watch test/fixtures/foo.js -c ${command}`
+  const result = $`"./dist/cli/index.js" watch test/fixtures/foo.js -c ${command}`
 
   for await (const chunk of result.stdout) {
     t.is(String(chunk).trim(), 'change:test/fixtures/foo.js')
@@ -30,7 +30,7 @@ test.serial('watcher', async t => {
 })
 
 test.serial('no files found', async t => {
-  const result = $`./dist/cli/index.js watch nodir/nofiles`
+  const result = $`"./dist/cli/index.js" watch nodir/nofiles`
 
   for await (const chunk of result.stdout) {
     t.is(String(chunk).trim(), 'No files to watch!')
@@ -41,8 +41,8 @@ test.serial('no files found', async t => {
 })
 
 test('show helper', async t => {
-  const help = await $`./dist/cli/index.js watch --help`
-  const alias = await $`./dist/cli/index.js watch -h`
+  const help = await $`"./dist/cli/index.js" watch --help`
+  const alias = await $`"./dist/cli/index.js" watch -h`
   const helper_prefix =
     '\nUsage:\n  doogu watch [patterns] [options]\n\nOptions:\n'
 
@@ -51,25 +51,25 @@ test('show helper', async t => {
 })
 
 test('alias options', async t => {
-  const result = await $`./dist/cli/index.js watch -v`
+  const result = await $`"./dist/cli/index.js" watch -v`
 
   t.truthy(result.toString())
 })
 
 test('options suggestions', async t => {
-  await t.throwsAsync($`./dist/cli/index.js watch --poll`, {
+  await t.throwsAsync($`"./dist/cli/index.js" watch --poll`, {
     instanceOf: Error,
     message: /Did you mean "--polling"?/
   })
 })
 
 test('unknown options', async t => {
-  await t.throwsAsync($`./dist/cli/index.js watch --bar`, {
+  await t.throwsAsync($`"./dist/cli/index.js" watch --bar`, {
     instanceOf: Error,
     message: /Unknown options "--bar"!/
   })
   // unknown alias
-  await t.throwsAsync($`./dist/cli/index.js watch -b`, {
+  await t.throwsAsync($`"./dist/cli/index.js" watch -b`, {
     instanceOf: Error,
     message: /Unknown options "-b"!/
   })
