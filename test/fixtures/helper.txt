@@ -1,0 +1,14 @@
+
+  doogu is a zero-config CLI tool that helps us develop modern JS and TS packages with ease
+
+  Usage:
+    doogu <command> [options]
+
+  Commands:
+    build   Builds the project on top of esbuild
+    lint    Lints the project on top of eslint
+    watch   Watches the project
+
+  Options:
+    --help, -h  Prints this help text
+

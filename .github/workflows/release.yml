@@ -1,0 +1,43 @@
+name: Release
+on:
+  repository_dispatch:
+    # curl -v -H "Accept: application/vnd.github.everest-preview+json" -H "Authorization: token ${GH_TOKEN}"
+    # https://api.github.com/repos/bent10/doogu/dispatches -d '{ "event_type": "semantic-release" }'
+    types: [semantic-release]
+  push:
+    branches:
+      - main
+      - next
+      - next-major
+      - beta
+      - alpha
+      - '*.x'
+
+jobs:
+  release:
+    name: Releasing
+    runs-on: ubuntu-latest
+
+    steps:
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v3
+
+      # https://github.com/actions/setup-node
+      - uses: actions/setup-node@v3
+
+      - name: Validate package
+        run: |
+          npm i
+          npm run ci
+
+      - name: Installing release dependencies
+        run: |
+          npm i -g semantic-release
+          npm i -g @semantic-release/changelog
+          npm i -g @semantic-release/git
+
+      - name: Semantic release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: semantic-release
