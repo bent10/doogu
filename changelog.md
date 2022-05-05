@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/bent10/doogu/compare/v1.0.2...v1.1.0) (2022-05-05)
+
+
+### Features
+
+* excluding Node.js 12 due to end-of-life ([4ec5b7c](https://github.com/bent10/doogu/commit/4ec5b7c8372a9b9b6ed9e57439b26bee78bc850f))
+
 ## [1.0.2](https://github.com/bent10/doogu/compare/v1.0.1...v1.0.2) (2022-05-05)
 
 
