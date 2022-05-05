@@ -7,7 +7,7 @@
  * npm i -D doogu
  * ```
  *
- * **Required** Node.js `>=12`.
+ * **Required** Node.js `>=14.16`.
  *
  * ## Usage
  *

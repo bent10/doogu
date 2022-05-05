@@ -24,7 +24,7 @@ Zero-config CLI tool that helps us develop modern `JS` and `TS` packages with ea
 npm i -D doogu
 ```
 
-**Required** Node.js `>=12`.
+**Required** Node.js `>=14.16`.
 
 ## Usage
 

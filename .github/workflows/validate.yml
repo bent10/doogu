@@ -1,5 +1,4 @@
-name: Validate packages
-
+name: Validation
 on:
   pull_request:
     types:
@@ -12,23 +11,25 @@ on:
       - '!main'
 
 jobs:
-  release:
-    runs-on: ubuntu-latest
-
+  test:
+    name: Node.js ${{ matrix.node-version }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
-        node: ['16', '14', '12']
-
-    name: Node v${{ matrix.node }}
-
+        node-version:
+          - 18
+          - 16
+          - 14
+        os:
+          - ubuntu-latest
+          - windows-latest
     steps:
-      # https://github.com/actions/checkout
       - uses: actions/checkout@v3
-
-      # https://github.com/actions/setup-node
       - uses: actions/setup-node@v3
-
-      - name: Validate package
-        run: |
-          npm i
-          npm run ci
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+      - run: npm test

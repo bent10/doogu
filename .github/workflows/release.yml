@@ -16,19 +16,16 @@ on:
 jobs:
   release:
     name: Releasing
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-lates
     steps:
-      # https://github.com/actions/checkout
       - uses: actions/checkout@v3
-
-      # https://github.com/actions/setup-node
       - uses: actions/setup-node@v3
-
-      - name: Validate package
-        run: |
-          npm i
-          npm run ci
+        with:
+          node-version: 14.16
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+      - run: npm test
 
       - name: Installing release dependencies
         run: |
