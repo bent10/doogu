@@ -59,7 +59,7 @@ function getExternalPackages(): string[] {
   // current project dependencies
   const externals = [
     'fsevents',
-    ...Object.keys(<Record<string, string>>pkg.dependencies)
+    ...Object.keys(<Record<string, string>>pkg.dependencies || {})
   ]
   // list of packages that came along with zx.
   const extra = [
