@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/bent10/doogu/compare/v1.1.0...v1.1.1) (2022-05-06)
+
+
+### Bug Fixes
+
+* **build:** prevent undefined dependencies ([fd6b831](https://github.com/bent10/doogu/commit/fd6b8315039c5a9051378c0c7d6413f0947db2cd))
+
 # [1.1.0](https://github.com/bent10/doogu/compare/v1.0.2...v1.1.0) (2022-05-05)
 
 
