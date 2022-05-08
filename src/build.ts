@@ -152,9 +152,7 @@ export async function runBuild(
   // run types command, if requested
   if (types) {
     const typesDir =
-      typeof types === 'string'
-        ? types
-        : path.join(<string>buildOptions.outdir, 'types')
+      typeof types === 'string' ? types : <string>buildOptions.outdir
     const tscArgs = [
       '--declaration',
       '--emitDeclarationOnly',

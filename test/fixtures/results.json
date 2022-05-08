@@ -15,18 +15,18 @@
     "test/fixtures/out/cli/utils.js"
   ],
   "types": [
-    "test/fixtures/out/types/build.d.ts",
-    "test/fixtures/out/types/constants.d.ts",
-    "test/fixtures/out/types/flags.d.ts",
-    "test/fixtures/out/types/index.d.ts",
-    "test/fixtures/out/types/lint.d.ts",
-    "test/fixtures/out/types/types.d.ts",
-    "test/fixtures/out/types/utils.d.ts",
-    "test/fixtures/out/types/watch.d.ts",
-    "test/fixtures/out/types/cli/asserts.d.ts",
-    "test/fixtures/out/types/cli/constants.d.ts",
-    "test/fixtures/out/types/cli/index.d.ts",
-    "test/fixtures/out/types/cli/utils.d.ts"
+    "test/fixtures/out/build.d.ts",
+    "test/fixtures/out/constants.d.ts",
+    "test/fixtures/out/flags.d.ts",
+    "test/fixtures/out/index.d.ts",
+    "test/fixtures/out/lint.d.ts",
+    "test/fixtures/out/types.d.ts",
+    "test/fixtures/out/utils.d.ts",
+    "test/fixtures/out/watch.d.ts",
+    "test/fixtures/out/cli/asserts.d.ts",
+    "test/fixtures/out/cli/constants.d.ts",
+    "test/fixtures/out/cli/index.d.ts",
+    "test/fixtures/out/cli/utils.d.ts"
   ],
   "customTypes": [
     "test/fixtures/out/build.d.ts",

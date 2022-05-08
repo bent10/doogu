@@ -31,7 +31,10 @@ test.serial('types', async t => {
   const outdirFiles = await expandFiles(outdirPattern)
 
   t.deepEqual(outfiles, results.build)
-  t.deepEqual(outdirFiles, [...results.build, ...results.types])
+  t.deepEqual(
+    outdirFiles,
+    [...results.build, ...results.types].sort(pathSorter)
+  )
 })
 
 test.serial('custom types directory', async t => {
