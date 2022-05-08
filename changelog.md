@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/bent10/doogu/compare/v1.1.1...v1.2.0) (2022-05-08)
+
+
+### Features
+
+* **types:** changed default output directory ([a95f54d](https://github.com/bent10/doogu/commit/a95f54dca6258507ea6db85a0e1ae0e03dbf2055))
+
 ## [1.1.1](https://github.com/bent10/doogu/compare/v1.1.0...v1.1.1) (2022-05-06)
 
 
