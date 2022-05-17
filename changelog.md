@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/bent10/doogu/compare/v1.2.0...v1.2.1) (2022-05-17)
+
+
+### Bug Fixes
+
+* updates build `--target=node14.16` ([8be29cf](https://github.com/bent10/doogu/commit/8be29cff9f8965329d5c5be4d95ef705a50b371a))
+
 # [1.2.0](https://github.com/bent10/doogu/compare/v1.1.1...v1.2.0) (2022-05-08)
 
 
