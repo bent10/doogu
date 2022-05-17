@@ -3,19 +3,15 @@
 Zero-config CLI tool that helps us develop modern `JS` and `TS` packages with ease.
 
 <details>
-  <summary>Table of contents</summary>
-  <ul dir="auto">
-    <li><a href="#install">Install</a></li>
-    <li><a href="#usage">Usage</a>
-    <ul dir="auto">
-      <li><a href="#doogu-build---types"><code>doogu build [--types]</code></a></li>
-      <li><a href="#doogu-lint---types"><code>doogu lint [--types]</code></a></li>
-      <li><a href="#doogu-watch---command"><code>doogu watch [--command]</code></a></li>
-    </ul>
-    </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#thank-you">Thank you</a></li>
-  </ul>
+<summary>Table of contents</summary>
+
+- [Install](#install)
+- [Usage](#usage)
+  - [`doogu build [--types]`](#doogu-build---types)
+  - [`doogu lint [--types]`](#doogu-lint---types)
+  - [`doogu watch [--command]`](#doogu-watch---command)
+- [Contributing](#contributing)
+- [Thank you](#thank-you)
 </details>
 
 ## Install

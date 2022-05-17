@@ -36,7 +36,7 @@
     "start": "npm run build && npm run dev",
     "dev": "./dist/cli/index.js watch",
     "lint": "tsc --noEmit && eslint src test --ext .ts",
-    "build": "esbuild src/index.ts src/cli/index.ts --outdir=dist --bundle --platform=node --target=node12 --format=esm --external:find-similar --external:yargs-parser --external:zx",
+    "build": "esbuild src/index.ts src/cli/index.ts --outdir=dist --bundle --platform=node --target=node14.16 --format=esm --external:find-similar --external:yargs-parser --external:zx",
     "test": "ava --verbose",
     "coverage": "c8 -r lcov -r text npm test"
   },
@@ -76,7 +76,8 @@
     "ignoredByWatcher": [
       "{coverage,dist}/**",
       "test/fixtures/**"
-    ]
+    ],
+    "timeout": "30s"
   },
   "config": {
     "commitizen": {
