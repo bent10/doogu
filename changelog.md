@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/bent10/doogu/compare/v2.0.1...v2.0.2) (2022-06-22)
+
+
+### Bug Fixes
+
+* remove `include` field in `config/tsconfig.json` file ([b3eaef9](https://github.com/bent10/doogu/commit/b3eaef93cba5387c70233c1305d6c91971495377))
+
 ## [2.0.1](https://github.com/bent10/doogu/compare/v2.0.0...v2.0.1) (2022-06-22)
 
 
