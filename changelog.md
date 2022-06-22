@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/bent10/doogu/compare/v2.0.2...v2.1.0) (2022-06-22)
+
+
+### Features
+
+* add `ts-node` schema for shareable tsconfig files ([70045f6](https://github.com/bent10/doogu/commit/70045f695aaab1094205d9a67fbb48aef5c4f463))
+
 ## [2.0.2](https://github.com/bent10/doogu/compare/v2.0.1...v2.0.2) (2022-06-22)
 
 
