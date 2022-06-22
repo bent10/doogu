@@ -1,3 +1,16 @@
+# [2.0.0](https://github.com/bent10/doogu/compare/v1.2.1...v2.0.0) (2022-06-22)
+
+
+### Features
+
+* drop `doogu` command ([e5b792d](https://github.com/bent10/doogu/commit/e5b792d523f0115191593ab24b00e0a3c461503e))
+
+
+### BREAKING CHANGES
+
+* The `doogu` command is no longer usable, we take advantage of the commands from
+each of the available tools.
+
 ## [1.2.1](https://github.com/bent10/doogu/compare/v1.2.0...v1.2.1) (2022-05-17)
 
 
