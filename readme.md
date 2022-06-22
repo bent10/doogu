@@ -54,7 +54,7 @@ Extending the shareable config for ESLint in `package.json` file:
   "name": "mypackage",
   "version": "1.0.0",
   "eslintConfig": {
-    "extends": "doogu/config/eslint.json"
+    "extends": "./node_modules/doogu/config/eslint.json"
   },
   "eslintIgnore": ["hello.ts", "world.ts"]
 }
@@ -68,9 +68,7 @@ Extending the shareable config for Prettier in `package.json` file:
 {
   "name": "mypackage",
   "version": "1.0.0",
-  "prettier": {
-    "extends": "doogu/config/prettier.json"
-  }
+  "prettier": "doogu/config/prettier.json"
 }
 ```
 
@@ -85,8 +83,8 @@ The commands that can be use in `package.json` file:
   "scripts": {
     "start": "npm run build && npm run watch",
     "watch": "chokidar \"src/*.ts\" -c \"npm run build\"",
-    "lint": "tsc --noEmit && eslint \"./src\" --ext .ts --cache --cache-location \"node_modules/.cache/.eslintcache\"",
-    "build": "swc \"./src\" -d dist && tsc --declaration --emitDeclarationOnly",
+    "lint": "tsc --noEmit && eslint \"./src\" --ext \".ts\" --cache --cache-location \"node_modules/.cache/.eslintcache\"",
+    "build": "swc \"./src\" -d \"dist\" && tsc -d --emitDeclarationOnly --outDir \"dist\"",
     "test": "ava --verbose",
     "coverage": "c8 -r lcov -r text npm test"
   }
