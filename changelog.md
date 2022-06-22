@@ -1,3 +1,11 @@
+## [2.1.1](https://github.com/bent10/doogu/compare/v2.1.0...v2.1.1) (2022-06-22)
+
+
+### Bug Fixes
+
+* readme docs ([34d45fd](https://github.com/bent10/doogu/commit/34d45fd2b3bb36eb35578397745696c8084d0312))
+* remove `outDir` field in tsconfig files ([ef22931](https://github.com/bent10/doogu/commit/ef22931dec55e96f049d3bd2dee881b4f8a15d0b))
+
 # [2.1.0](https://github.com/bent10/doogu/compare/v2.0.2...v2.1.0) (2022-06-22)
 
 
