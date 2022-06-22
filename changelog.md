@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/bent10/doogu/compare/v2.1.1...v2.1.2) (2022-06-22)
+
+
+### Bug Fixes
+
+* **tsconfigs:** remove `transpileOnly` field from `ts-node` schema ([b197852](https://github.com/bent10/doogu/commit/b1978527c5fd0d4bb24e84c0f6999c88b8b32e1a))
+
 ## [2.1.1](https://github.com/bent10/doogu/compare/v2.1.0...v2.1.1) (2022-06-22)
 
 
