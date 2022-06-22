@@ -4,8 +4,13 @@
   "compilerOptions": {
     "outDir": "dist",
     "module": "esnext",
+    "moduleResolution": "node",
     "importHelpers": true
   },
 
-  "include": ["src"]
+  "ts-node": {
+    "esm": true,
+    "swc": true,
+    "transpileOnly": true
+  }
 }
