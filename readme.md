@@ -1,18 +1,16 @@
 # doogu
 
-Zero-config CLI tool that helps us develop modern `JS` and `TS` packages with ease.
-
-<details>
-<summary>Table of contents</summary>
+A wrapper around modern JavaScript tools.
 
 - [Install](#install)
-- [Usage](#usage)
-  - [`doogu build [--types]`](#doogu-build---types)
-  - [`doogu lint [--types]`](#doogu-lint---types)
-  - [`doogu watch [--command]`](#doogu-watch---command)
+- [What includes?](#what-includes)
+- [Shareable configs](#shareable-configs)
+  - [`tsconfig`](#tsconfig)
+  - [`eslint`](#eslint)
+  - [`prettier`](#prettier)
+- [Scripts](#scripts)
 - [Contributing](#contributing)
 - [Thank you](#thank-you)
-</details>
 
 ## Install
 
@@ -20,93 +18,80 @@ Zero-config CLI tool that helps us develop modern `JS` and `TS` packages with ea
 npm i -D doogu
 ```
 
-**Required** Node.js `>=14.16`.
+## What includes?
 
-## Usage
+This package contains the following dependencies, for development purposes:
 
-Run `doogu --help` for available commands.
+- [Prettier](https://prettier.io/) – An opinionated code formatter
+- [ESLint](https://eslint.org/) – Pluggable JavaScript linter
+- [SWC](https://swc.rs/) – An extensible Rust-based platform for the next generation of fast developer tools
+- [Typescript](https://www.typescriptlang.org/) – A language for application-scale JavaScript
+- [ts-node](https://typestrong.org/ts-node/) – TypeScript execution and REPL for node.js
+- [AVA](https://github.com/avajs/ava) – A test runner for Node.js
+- [c8](https://github.com/bcoe/c8) – A native V8 code-coverage
+- [chokidar-cli](https://www.npmjs.com/package/chokidar-cli) – Fast `cross-platform` command line utility to watch file system changes
 
-### `doogu build [--types]`
+## Shareable configs
 
-Performs `doogu build [patterns] [options]` command on top of `esbuild`.
+The configuration file that can be use with other projects.
 
-```bash
-# Bundles "src/**\/index.[jt]s(x)?" into "dist" directory
-doogu build
+### `tsconfig`
 
-# Bundles "src/**\/index.[jt]s(x)?" and "*.d.ts" files
-doogu build --types
+Extending the shareable config for TypeScript in `tsconfig.json` file:
 
-# Produces "assets/**\/*.js" and "*.d.ts" files
-doogu build "src/**\/*.ts" --outdir=assets --no-bundle --types
-
-# Allow JSX syntax in .js files
-doogu build src/component.js --loader:.js=jsx
-
-# Substitute the identifier RELEASE for the literal true
-doogu build example.js --outfile=output.js --define:RELEASE=true
+```json
+{
+  "extends": "doogu/config/tsconfig.json"
+}
 ```
 
-Run `doogu build --help` for available options.
+### `eslint`
 
-#### Parameters
+Extending the shareable config for ESLint in `package.json` file:
 
-| Name           | Type                        | Description                   |
-| :------------- | :-------------------------- | :---------------------------- |
-| `patterns`     | string \| readonly string[] | File paths or globs to build. |
-| `OptionalArgs` | OptionalArgs                | Options to pass to `esbuild`. |
-
----
-
-### `doogu lint [--types]`
-
-Performs `doogu lint [patterns] [options]` command on top of `eslint`.
-
-```bash
-# Lint .js, .jsx, .ts, .tsx files in the "src" and "test" directory
-doogu lint
-
-# Run types checking as well
-doogu lint --types
-
-# Custom input files and options
-doogu lint app --ext=".ts,.tsx" --cache --cache-location=".cache/.eslintcache"
+```json
+{
+  "name": "mypackage",
+  "version": "1.0.0",
+  "eslintConfig": {
+    "extends": "doogu/config/eslint.json"
+  },
+  "eslintIgnore": ["hello.ts", "world.ts"]
+}
 ```
 
-Run `doogu lint --help` for available options.
+### `prettier`
 
-#### Parameters
+Extending the shareable config for Prettier in `package.json` file:
 
-| Name           | Type                        | Description                   |
-| :------------- | :-------------------------- | :---------------------------- |
-| `patterns`     | string \| readonly string[] | File paths or globs to build. |
-| `OptionalArgs` | OptionalArgs                | Options to pass to `eslint`.  |
-
----
-
-### `doogu watch [--command]`
-
-Performs `doogu watch [patterns] [options]` command.
-
-```bash
-# Automatically rebuild when "src/**\/*" files are changed
-doogu watch
-
-# Rebuild when .ts and .scss files are changed
-doogu watch "src/**\/*.{ts,scss}"
-
-# Run custom command when input files are changed
-doogu watch "src/**\/*.ts" --command="doogu lint"
+```json
+{
+  "name": "mypackage",
+  "version": "1.0.0",
+  "prettier": {
+    "extends": "doogu/config/prettier.json"
+  }
+}
 ```
 
-Run `doogu watch --help` for available options
+## Scripts
 
-#### Parameters
+The commands that can be use in `package.json` file:
 
-| Name           | Type                        | Description                       |
-| :------------- | :-------------------------- | :-------------------------------- |
-| `patterns`     | string \| readonly string[] | File paths or globs to build.     |
-| `OptionalArgs` | OptionalArgs                | Options to pass to the `watcher`. |
+```json
+{
+  "name": "mypackage",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm run build && npm run watch",
+    "watch": "chokidar \"src/*.ts\" -c \"npm run build\"",
+    "lint": "tsc --noEmit && eslint \"./src\" --ext .ts --cache --cache-location \"node_modules/.cache/.eslintcache\"",
+    "build": "swc \"./src\" -d dist && tsc --declaration --emitDeclarationOnly",
+    "test": "ava --verbose",
+    "coverage": "c8 -r lcov -r text npm test"
+  }
+}
+```
 
 ## Contributing
 

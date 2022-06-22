@@ -1,0 +1,16 @@
+{
+  "extends": "@tsconfig/node12/tsconfig.json",
+
+  "compilerOptions": {
+    "module": "esnext",
+    "importHelpers": true
+  },
+
+  "ts-node": {
+    "esm": true,
+    "swc": true,
+    "transpileOnly": true
+  },
+
+  "include": ["bench", "src"]
+}

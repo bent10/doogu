@@ -1,6 +1,6 @@
 {
   "name": "doogu",
-  "description": "Zero-config CLI tool that helps us develop modern JS and TS packages with ease",
+  "description": "A wrapper around modern JavaScript tools",
   "version": "0.0.0-development",
   "publishConfig": {
     "access": "public"
@@ -10,74 +10,44 @@
   "repository": "https://github.com/bent10/doogu",
   "keywords": [
     "javascript",
-    "lint",
-    "cli",
-    "build",
     "typescript",
+    "lint",
+    "linter",
     "eslint",
+    "build",
     "watch",
-    "built",
+    "test",
+    "coverage",
+    "development",
+    "cli",
     "doogu"
   ],
-  "engines": {
-    "node": ">=14.16"
-  },
-  "type": "module",
-  "exports": "./src/index.js",
-  "bin": {
-    "doogu": "dist/cli/index.js"
-  },
   "files": [
-    "dist",
+    "config",
     "readme.md",
     "license"
   ],
+  "eslintConfig": {
+    "extends": "./config/eslint.json"
+  },
+  "prettier": "./config/prettier.json",
   "scripts": {
-    "start": "npm run build && npm run dev",
-    "dev": "./dist/cli/index.js watch",
-    "lint": "tsc --noEmit && eslint src test --ext .ts",
-    "build": "esbuild src/index.ts src/cli/index.ts --outdir=dist --bundle --platform=node --target=node14.16 --format=esm --external:find-similar --external:yargs-parser --external:zx",
-    "test": "ava --verbose",
-    "coverage": "c8 -r lcov -r text npm test"
+    "test": "eslint \"./config\" --ext \".js,.json\" --cache --cache-location \"node_modules/.cache/.eslintcache\""
   },
   "dependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.204",
+    "@swc/helpers": "^0.4.2",
     "@types/node": "^17.0.27",
-    "@types/yargs-parser": "^21.0.0",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
+    "ava": "^4.3.0",
+    "c8": "^7.11.3",
     "chokidar-cli": "^3.0.0",
-    "esbuild": "^0.14.38",
     "eslint": "^8.14.0",
     "eslint-config-prettier": "^8.5.0",
-    "find-similar": "^1.1.0",
-    "typescript": "^4.6.4",
-    "yargs-parser": "^21.0.1",
-    "zx": "^6.1.0"
-  },
-  "devDependencies": {
-    "ava": "4.2.0",
-    "c8": "7.11.2",
-    "ts-node": "10.7.0"
-  },
-  "ava": {
-    "files": [
-      "test/**/*.test.ts"
-    ],
-    "extensions": {
-      "ts": "module"
-    },
-    "experiments": {
-      "configurableModuleFormat": true
-    },
-    "nodeArguments": [
-      "--loader=ts-node/esm",
-      "--no-warnings"
-    ],
-    "ignoredByWatcher": [
-      "{coverage,dist}/**",
-      "test/fixtures/**"
-    ],
-    "timeout": "30s"
+    "ts-node": "^10.8.1",
+    "typescript": "^4.6.4"
   },
   "config": {
     "commitizen": {
