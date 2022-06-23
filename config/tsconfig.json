@@ -2,7 +2,7 @@
   "extends": "@tsconfig/node12/tsconfig.json",
 
   "compilerOptions": {
-    "module": "esnext",
+    "module": "es2015",
     "moduleResolution": "node",
     "importHelpers": true
   },
