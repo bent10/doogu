@@ -1,3 +1,11 @@
+# [2.2.0](https://github.com/bent10/doogu/compare/v2.1.5...v2.2.0) (2022-06-23)
+
+
+### Features
+
+* adds `eslint-root.json` ([2cf4bc3](https://github.com/bent10/doogu/commit/2cf4bc343038cd93c2fc6eee3c765a7870dca6ed))
+* adds `prettier-frontend.json` ([da2240a](https://github.com/bent10/doogu/commit/da2240a56e4fcfdf67d0a9c673dd44b946acc822))
+
 ## [2.1.5](https://github.com/bent10/doogu/compare/v2.1.4...v2.1.5) (2022-06-23)
 
 
