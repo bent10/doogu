@@ -1,3 +1,10 @@
+## [2.1.5](https://github.com/bent10/doogu/compare/v2.1.4...v2.1.5) (2022-06-23)
+
+
+### Bug Fixes
+
+* **tsconfigs:** sets module to `es2015` ([18ea93d](https://github.com/bent10/doogu/commit/18ea93df13bb2679bfe1bac35e4f27372915b694))
+
 ## [2.1.4](https://github.com/bent10/doogu/compare/v2.1.3...v2.1.4) (2022-06-22)
 
 
