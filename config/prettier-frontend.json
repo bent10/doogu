@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/prettierrc.json",
+  "tabWidth": 2,
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx", "*.ts", "*.tsx", "*.vue", "*.svelte"],
+      "options": {
+        "arrowParens": "avoid",
+        "jsxSingleQuote": true,
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "vueIndentScriptAndStyle": false
+      }
+    }
+  ]
+}
