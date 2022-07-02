@@ -1,0 +1,12 @@
+{
+  "transform": {
+    "^.+\\.(t|j)sx?$": ["@swc/jest"]
+  },
+  "moduleNameMapper": {
+    "^./utils.js$": "<rootDir>/test/utils.ts"
+  },
+  "extensionsToTreatAsEsm": [".js", ".jsx", ".ts", ".tsx"],
+  "watchPathIgnorePatterns": ["<rootDir>/test/fixtures"],
+  "clearMocks": true,
+  "coverageDirectory": "coverage"
+}

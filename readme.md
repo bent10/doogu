@@ -26,9 +26,7 @@ This package contains the following dependencies, for development purposes:
 - [ESLint](https://eslint.org/) – Pluggable JavaScript linter
 - [SWC](https://swc.rs/) – An extensible Rust-based platform for the next generation of fast developer tools
 - [Typescript](https://www.typescriptlang.org/) – A language for application-scale JavaScript
-- [ts-node](https://typestrong.org/ts-node/) – TypeScript execution and REPL for node.js
-- [AVA](https://github.com/avajs/ava) – A test runner for Node.js
-- [c8](https://github.com/bcoe/c8) – A native V8 code-coverage
+- [Jest](https://github.com/avajs/ava) – A delightful JavaScript Testing Framework
 - [chokidar-cli](https://www.npmjs.com/package/chokidar-cli) – Fast `cross-platform` command line utility to watch file system changes
 
 ## Shareable configs
@@ -85,8 +83,8 @@ The commands that can be use in `package.json` file:
     "watch": "chokidar \"src/*.ts\" -c \"npm run build\"",
     "lint": "tsc --noEmit && eslint \"./src\" --ext \".ts\" --cache --cache-location \"node_modules/.cache/.eslintcache\"",
     "build": "swc \"./src\" -d \"dist\" && tsc -d --emitDeclarationOnly --outDir \"dist\"",
-    "test": "ava --verbose",
-    "coverage": "c8 -r lcov -r text npm test"
+    "test": "node --experimental-vm-modules --no-warnings ./node_modules/jest/bin/jest.js --verbose",
+    "coverage": "npm test -- --coverage"
   }
 }
 ```
