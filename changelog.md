@@ -1,3 +1,10 @@
+## [2.2.9](https://github.com/bent10/doogu/compare/v2.2.8...v2.2.9) (2022-07-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency ts-node to ^10.8.2 ([b37b44a](https://github.com/bent10/doogu/commit/b37b44a381a04a154ac1b621db2744df922c8e36))
+
 ## [2.2.8](https://github.com/bent10/doogu/compare/v2.2.7...v2.2.8) (2022-07-02)
 
 
