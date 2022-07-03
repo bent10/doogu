@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/bent10/doogu/compare/v2.2.9...v2.3.0) (2022-07-03)
+
+
+### Features
+
+* replaced ava with jest ([755bc5f](https://github.com/bent10/doogu/commit/755bc5f5509e699d0351ed72cb4b394066564862))
+
 ## [2.2.9](https://github.com/bent10/doogu/compare/v2.2.8...v2.2.9) (2022-07-02)
 
 
