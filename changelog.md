@@ -1,3 +1,10 @@
+## [2.3.2](https://github.com/bent10/doogu/compare/v2.3.1...v2.3.2) (2022-07-03)
+
+
+### Bug Fixes
+
+* revert `@tsconfig/base` ([dd54481](https://github.com/bent10/doogu/commit/dd544813d502459581931b54d783eb33d52238b8))
+
 ## [2.3.1](https://github.com/bent10/doogu/compare/v2.3.0...v2.3.1) (2022-07-03)
 
 
