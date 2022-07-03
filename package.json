@@ -90,5 +90,10 @@
       "@semantic-release/github",
       "@semantic-release/npm"
     ]
+  },
+  "devDependencies": {
+    "@tsconfig/node12": "^1.0.11",
+    "@tsconfig/node14": "^1.0.3",
+    "@tsconfig/node16": "^1.0.3"
   }
 }
