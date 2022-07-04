@@ -1,3 +1,10 @@
+## [2.3.4](https://github.com/bent10/doogu/compare/v2.3.3...v2.3.4) (2022-07-04)
+
+
+### Bug Fixes
+
+* config/jest.json ([324e0bc](https://github.com/bent10/doogu/commit/324e0bc081ecc2cfa5b998a87645dfccfffe4d89))
+
 ## [2.3.3](https://github.com/bent10/doogu/compare/v2.3.2...v2.3.3) (2022-07-03)
 
 
