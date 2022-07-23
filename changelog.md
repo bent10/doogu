@@ -1,3 +1,11 @@
+## [2.3.13](https://github.com/bent10/doogu/compare/v2.3.12...v2.3.13) (2022-07-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/jest to ^0.2.22 ([309cda2](https://github.com/bent10/doogu/commit/309cda2c2872b3224fe064775e1ef99b472eefde))
+* **deps:** update typescript-eslint monorepo to ^5.30.7 ([5f0f350](https://github.com/bent10/doogu/commit/5f0f350e3b94e07ea3bad28f7730222613f12310))
+
 ## [2.3.12](https://github.com/bent10/doogu/compare/v2.3.11...v2.3.12) (2022-07-23)
 
 
