@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@swc/cli": "^0.1.57",
-    "@swc/core": "^1.2.224",
+    "@swc/core": "^1.2.226",
     "@swc/helpers": "^0.4.3",
     "@swc/jest": "^0.2.22",
     "@tsconfig/node12": "^1.0.11",
