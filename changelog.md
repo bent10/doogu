@@ -1,3 +1,15 @@
+# [2.4.0](https://github.com/bent10/doogu/compare/v2.3.29...v2.4.0) (2022-08-24)
+
+
+### Bug Fixes
+
+* moves `jest.json` to `jest.coonfig.js` ([5d9fbe0](https://github.com/bent10/doogu/commit/5d9fbe024629226ee64e49a7c23570d3a11c024d))
+
+
+### Features
+
+* adds `jest.config.cjs` file ([5d1ed52](https://github.com/bent10/doogu/commit/5d1ed526d0c88e875d772d9089e4ed72d878a5fc))
+
 ## [2.3.29](https://github.com/bent10/doogu/compare/v2.3.28...v2.3.29) (2022-08-20)
 
 
