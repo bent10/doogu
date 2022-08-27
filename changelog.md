@@ -1,3 +1,12 @@
+## [2.4.2](https://github.com/bent10/doogu/compare/v2.4.1...v2.4.2) (2022-08-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/helpers to ^0.4.11 ([73ba731](https://github.com/bent10/doogu/commit/73ba731ca215d1ca2e52abeff0e6980bcd2a2c3b))
+* **deps:** update dependency @types/jest to ^28.1.8 ([ce175be](https://github.com/bent10/doogu/commit/ce175be8d81aafd18aa5daaa745714d73d7bc300))
+* **deps:** update dependency eslint to ^8.23.0 ([0097087](https://github.com/bent10/doogu/commit/00970879dcfea9fa04fb597266dfd0f1862596fc))
+
 ## [2.4.1](https://github.com/bent10/doogu/compare/v2.4.0...v2.4.1) (2022-08-27)
 
 
