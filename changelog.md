@@ -1,3 +1,10 @@
+## [2.4.4](https://github.com/bent10/doogu/compare/v2.4.3...v2.4.4) (2022-08-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency jest to v29 ([4d91989](https://github.com/bent10/doogu/commit/4d91989836730b5601e0982a958bb7df6426de18))
+
 ## [2.4.3](https://github.com/bent10/doogu/compare/v2.4.2...v2.4.3) (2022-08-27)
 
 
