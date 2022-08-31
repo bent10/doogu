@@ -1,3 +1,10 @@
+## [2.4.5](https://github.com/bent10/doogu/compare/v2.4.4...v2.4.5) (2022-08-31)
+
+
+### Bug Fixes
+
+* revert to jest v28 ([d6b8ec8](https://github.com/bent10/doogu/commit/d6b8ec8a6e0e28003bfb55362bd5fa49bc45ab1d))
+
 ## [2.4.4](https://github.com/bent10/doogu/compare/v2.4.3...v2.4.4) (2022-08-27)
 
 
