@@ -1,3 +1,10 @@
+## [2.4.18](https://github.com/bent10/doogu/compare/v2.4.17...v2.4.18) (2022-10-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/jest to ^0.2.23 ([66724d9](https://github.com/bent10/doogu/commit/66724d90854e32c58ed31032dfd5912465a7e555))
+
 ## [2.4.17](https://github.com/bent10/doogu/compare/v2.4.16...v2.4.17) (2022-10-01)
 
 
