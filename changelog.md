@@ -1,3 +1,11 @@
+## [2.4.23](https://github.com/bent10/doogu/compare/v2.4.22...v2.4.23) (2022-10-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/core to ^1.3.6 ([ba12cb9](https://github.com/bent10/doogu/commit/ba12cb9f4ede4e8de729b56b2c5a580de95a8e54))
+* **deps:** update typescript-eslint monorepo to ^5.39.0 ([0e69ba8](https://github.com/bent10/doogu/commit/0e69ba8b1b2b2cff9950820166a117b4e4f9b9f9))
+
 ## [2.4.22](https://github.com/bent10/doogu/compare/v2.4.21...v2.4.22) (2022-10-08)
 
 
