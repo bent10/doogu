@@ -1,3 +1,10 @@
+## [2.4.36](https://github.com/bent10/doogu/compare/v2.4.35...v2.4.36) (2022-11-05)
+
+
+### Bug Fixes
+
+* **deps:** update typescript-eslint monorepo to ^5.42.0 ([9111ac8](https://github.com/bent10/doogu/commit/9111ac851223a917f8efc9c795c1f6abb5522565))
+
 ## [2.4.35](https://github.com/bent10/doogu/compare/v2.4.34...v2.4.35) (2022-11-05)
 
 
