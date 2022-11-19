@@ -1,3 +1,10 @@
+## [2.4.43](https://github.com/bent10/doogu/compare/v2.4.42...v2.4.43) (2022-11-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint to ^8.28.0 ([207dfc6](https://github.com/bent10/doogu/commit/207dfc67052edc1b67a1a140cd13bfa1d92c53a0))
+
 ## [2.4.42](https://github.com/bent10/doogu/compare/v2.4.41...v2.4.42) (2022-11-19)
 
 
