@@ -1,3 +1,10 @@
+## [2.4.44](https://github.com/bent10/doogu/compare/v2.4.43...v2.4.44) (2022-11-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency typescript to ^4.9.3 ([d971ded](https://github.com/bent10/doogu/commit/d971ded9eab8fc1e2f167561ab8b5b8e15ba50fd))
+
 ## [2.4.43](https://github.com/bent10/doogu/compare/v2.4.42...v2.4.43) (2022-11-19)
 
 
