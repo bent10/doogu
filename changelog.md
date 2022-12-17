@@ -1,3 +1,10 @@
+## [2.4.61](https://github.com/bent10/doogu/compare/v2.4.60...v2.4.61) (2022-12-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to ^18.11.16 ([38d0764](https://github.com/bent10/doogu/commit/38d0764c185c04eb20594943405b2e19217191a2))
+
 ## [2.4.60](https://github.com/bent10/doogu/compare/v2.4.59...v2.4.60) (2022-12-17)
 
 
