@@ -1,3 +1,10 @@
+## [2.4.68](https://github.com/bent10/doogu/compare/v2.4.67...v2.4.68) (2022-12-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/cli to ^0.1.59 ([76e0f43](https://github.com/bent10/doogu/commit/76e0f433e14c1505d87bfb1e181a5280950c4e78))
+
 ## [2.4.67](https://github.com/bent10/doogu/compare/v2.4.66...v2.4.67) (2022-12-25)
 
 
