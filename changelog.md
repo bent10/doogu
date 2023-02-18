@@ -1,3 +1,31 @@
+## [2.4.72](https://github.com/bent10/doogu/compare/v2.4.71...v2.4.72) (2023-02-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/cli to ^0.1.61 ([2155c15](https://github.com/bent10/doogu/commit/2155c15a4fcd687d14af615237ea002abc85d654))
+* **deps:** update dependency @swc/cli to ^0.1.62 ([4ea8ab0](https://github.com/bent10/doogu/commit/4ea8ab05bd7e6242479e394de1eb2b44a895a0a0))
+* **deps:** update dependency @swc/core to ^1.3.25 ([235a171](https://github.com/bent10/doogu/commit/235a171b8c97118b75015c76da067bce0354c393))
+* **deps:** update dependency @swc/core to ^1.3.26 ([fa29265](https://github.com/bent10/doogu/commit/fa2926589e195771de199ae1367c98716a7aa3d8))
+* **deps:** update dependency @swc/core to ^1.3.27 ([4ca368f](https://github.com/bent10/doogu/commit/4ca368f91087c72f5f03dc0f2dd0092857983041))
+* **deps:** update dependency @swc/core to ^1.3.29 ([79fe142](https://github.com/bent10/doogu/commit/79fe142e738daa5212a3b8eb1f44aee2914881d6))
+* **deps:** update dependency @swc/core to ^1.3.30 ([0f20b6f](https://github.com/bent10/doogu/commit/0f20b6ffecf06cdab34d06c376cf4a2cb546a596))
+* **deps:** update dependency @swc/core to ^1.3.32 ([de58844](https://github.com/bent10/doogu/commit/de58844dab2659907b24b853fae8ec3ee7faaf8a))
+* **deps:** update dependency @swc/core to ^1.3.35 ([d5d8fc1](https://github.com/bent10/doogu/commit/d5d8fc1331b3ae5fa37c66f982a54ae358f20295))
+* **deps:** update dependency @types/node to ^18.11.19 ([ba33c0e](https://github.com/bent10/doogu/commit/ba33c0e7ab3305d5a650d5100761e982571b1acf))
+* **deps:** update dependency @types/node to ^18.13.0 ([c5141fc](https://github.com/bent10/doogu/commit/c5141fcf0dfbc17adc20e960940ab3a56c65e5f0))
+* **deps:** update dependency eslint to ^8.32.0 ([e2233ab](https://github.com/bent10/doogu/commit/e2233aba223f0b2d9dd70031342f92e7e52359c6))
+* **deps:** update dependency eslint to ^8.33.0 ([12df7e3](https://github.com/bent10/doogu/commit/12df7e388bcd67d16b60e7a46ee57a4faa247d5e))
+* **deps:** update dependency eslint to ^8.34.0 ([10b0065](https://github.com/bent10/doogu/commit/10b00653405151a2c51f8a7e8edc274fd4ae3611))
+* **deps:** update dependency eslint-config-prettier to ^8.6.0 ([7577880](https://github.com/bent10/doogu/commit/75778805921f930acce1cb9cb32281b2a551f749))
+* **deps:** update dependency typescript to ^4.9.5 ([334a90e](https://github.com/bent10/doogu/commit/334a90e8e8fe862205535391b4fe345b8d9e2c0c))
+* **deps:** update typescript-eslint monorepo to ^5.48.0 ([3a7f2ca](https://github.com/bent10/doogu/commit/3a7f2caa4c67bbf9c6c43c96eebfb26c50e6d149))
+* **deps:** update typescript-eslint monorepo to ^5.48.1 ([cb4e9cb](https://github.com/bent10/doogu/commit/cb4e9cb5e94af2e52294dd794536109e21f7152e))
+* **deps:** update typescript-eslint monorepo to ^5.48.2 ([8b1aa51](https://github.com/bent10/doogu/commit/8b1aa517577e415ee4619f83437a036e9e3b954a))
+* **deps:** update typescript-eslint monorepo to ^5.49.0 ([58707a0](https://github.com/bent10/doogu/commit/58707a0a799d3ec3345b657819aa81ee9787a83f))
+* **deps:** update typescript-eslint monorepo to ^5.50.0 ([7247ef4](https://github.com/bent10/doogu/commit/7247ef41c9615474517aed4a7ad9f25cb4493a1b))
+* **deps:** update typescript-eslint monorepo to ^5.51.0 ([fb89966](https://github.com/bent10/doogu/commit/fb89966f74412196f451f6a7ee515e90577fc447))
+
 ## [2.4.71](https://github.com/bent10/doogu/compare/v2.4.70...v2.4.71) (2022-12-31)
 
 
