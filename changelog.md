@@ -1,3 +1,10 @@
+## [2.4.87](https://github.com/bent10/doogu/compare/v2.4.86...v2.4.87) (2023-03-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to ^8.7.0 ([2af911c](https://github.com/bent10/doogu/commit/2af911c80f37bedad3d492657238a5274a7cee07))
+
 ## [2.4.86](https://github.com/bent10/doogu/compare/v2.4.85...v2.4.86) (2023-03-11)
 
 
