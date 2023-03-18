@@ -1,3 +1,11 @@
+## [2.4.89](https://github.com/bent10/doogu/compare/v2.4.88...v2.4.89) (2023-03-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to ^18.15.3 ([a8be9ae](https://github.com/bent10/doogu/commit/a8be9ae39d677e824d9e8b34569fec56a98c3cbd))
+* **deps:** update typescript-eslint monorepo to ^5.55.0 ([5d4b260](https://github.com/bent10/doogu/commit/5d4b2607241258bb8129441ad5079ffaa6feac47))
+
 ## [2.4.88](https://github.com/bent10/doogu/compare/v2.4.87...v2.4.88) (2023-03-18)
 
 
