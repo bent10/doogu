@@ -1,3 +1,10 @@
+## [2.4.99](https://github.com/bent10/doogu/compare/v2.4.98...v2.4.99) (2023-04-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/helpers to ^0.5.0 ([90e7050](https://github.com/bent10/doogu/commit/90e70509c0e28bdfe9bb220e801af2883e4bbfe0))
+
 ## [2.4.98](https://github.com/bent10/doogu/compare/v2.4.97...v2.4.98) (2023-04-08)
 
 
