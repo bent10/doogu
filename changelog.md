@@ -1,3 +1,10 @@
+## [2.4.111](https://github.com/bent10/doogu/compare/v2.4.110...v2.4.111) (2023-04-29)
+
+
+### Bug Fixes
+
+* **deps:** update swc monorepo ([22c0ef7](https://github.com/bent10/doogu/commit/22c0ef75c176d2951caac66c7d2dbb3886b28958))
+
 ## [2.4.110](https://github.com/bent10/doogu/compare/v2.4.109...v2.4.110) (2023-04-29)
 
 
