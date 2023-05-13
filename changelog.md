@@ -1,3 +1,10 @@
+## [2.4.119](https://github.com/bent10/doogu/compare/v2.4.118...v2.4.119) (2023-05-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @tsconfig/node16 to ^1.0.4 ([731009a](https://github.com/bent10/doogu/commit/731009af1d4844597714fb8ec2066685395bc696))
+
 ## [2.4.118](https://github.com/bent10/doogu/compare/v2.4.117...v2.4.118) (2023-05-13)
 
 
