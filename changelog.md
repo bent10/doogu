@@ -1,3 +1,10 @@
+## [2.4.124](https://github.com/bent10/doogu/compare/v2.4.123...v2.4.124) (2023-05-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to ^18.16.13 ([aeea441](https://github.com/bent10/doogu/commit/aeea4416ebebff9e08505253d7738cab936bfff2))
+
 ## [2.4.123](https://github.com/bent10/doogu/compare/v2.4.122...v2.4.123) (2023-05-20)
 
 
