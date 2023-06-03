@@ -1,3 +1,10 @@
+## [2.4.131](https://github.com/bent10/doogu/compare/v2.4.130...v2.4.131) (2023-06-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/core to ^1.3.61 ([ddf1812](https://github.com/bent10/doogu/commit/ddf18129286c866e9753d59cb53c43df5cccd664))
+
 ## [2.4.130](https://github.com/bent10/doogu/compare/v2.4.129...v2.4.130) (2023-05-27)
 
 
