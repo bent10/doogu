@@ -39,7 +39,7 @@
     "@swc/core": "^1.3.67",
     "@swc/helpers": "^0.5.1",
     "@swc/jest": "^0.2.26",
-    "@tsconfig/node12": "^1.0.11",
+    "@tsconfig/node12": "^12.1.0",
     "@tsconfig/node14": "^1.0.3",
     "@tsconfig/node16": "^1.0.4",
     "@types/jest": "^28.1.8",
