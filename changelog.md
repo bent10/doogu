@@ -1,3 +1,26 @@
+# [3.0.0](https://github.com/bent10/doogu/compare/v2.4.151...v3.0.0) (2023-07-17)
+
+
+### Bug Fixes
+
+* `eslint` configs ([ddbbf5f](https://github.com/bent10/doogu/commit/ddbbf5fc6787f47a740343053d683eb0d1b2ca77))
+
+
+### Code Refactoring
+
+* **deps:** removes `@tsconfig/*` ([dcad079](https://github.com/bent10/doogu/commit/dcad079fc0cd27d70f23e62c59cdb4b171f1b0ee))
+
+
+### Features
+
+* **deps:** add `prettier` ([8318e08](https://github.com/bent10/doogu/commit/8318e08c746bce56c3f851ae640e66bff44a4d4f))
+
+
+### BREAKING CHANGES
+
+* **deps:** If you have a dependency on the `@tsconfig/*` package, from now on you are
+responsible for installing it yourself. We have also removed the `config/tsconfig.*` files.
+
 ## [2.4.151](https://github.com/bent10/doogu/compare/v2.4.150...v2.4.151) (2023-07-15)
 
 
