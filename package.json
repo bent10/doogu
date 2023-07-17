@@ -23,12 +23,12 @@
     "doogu"
   ],
   "files": [
-    ".eslintrc",
-    ".prettierrc",
-    ".releaserc",
     "changelog.md",
+    "eslint.js",
+    "license",
+    "prettier.json",
     "readme.md",
-    "license"
+    "release.config.js"
   ],
   "dependencies": {
     "@tsconfig/node12": "^12.1.0",
@@ -49,5 +49,6 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
-  }
+  },
+  "prettier": "./prettier.json"
 }

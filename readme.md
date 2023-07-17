@@ -39,7 +39,7 @@ To extend the shareable ESLint configuration in your `package.json` file, add th
 ```json
 {
   "eslintConfig": {
-    "extends": "doogu"
+    "extends": "doogu/eslint"
   }
 }
 ```
@@ -50,7 +50,7 @@ To extend the shareable Prettier configuration in your `package.json` file, add 
 
 ```json
 {
-  "prettier": "doogu"
+  "prettier": "doogu/prettier.json"
 }
 ```
 
@@ -60,7 +60,7 @@ To extend the shareable Semantic Release config in your `package.json` file, add
 
 ```json
 {
-  "release": "doogu"
+  "release": "doogu/release.config.js"
 }
 ```
 
