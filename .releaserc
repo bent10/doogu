@@ -27,9 +27,7 @@
       "@semantic-release/git",
       {
         "assets": [
-          "changelog.md",
-          "package.json",
-          "package-lock.json"
+          "changelog.md"
         ],
         "message": "chore(release): ${nextRelease.version} \n\n${nextRelease.notes}"
       }

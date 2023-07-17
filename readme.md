@@ -5,10 +5,10 @@ A wrapper around modern JavaScript tools.
 - [Install](#install)
 - [What includes?](#what-includes)
 - [Shareable configs](#shareable-configs)
-  - [`tsconfig`](#tsconfig)
-  - [`eslint`](#eslint)
-  - [`prettier`](#prettier)
-- [Scripts](#scripts)
+  - [ESLint Configuration](#eslint-configuration)
+  - [Prettier Configuration](#prettier-configuration)
+  - [Semantic Release Configuration](#semantic-release-configuration)
+- [NPM Scripts](#npm-scripts)
 - [Contributing](#contributing)
 - [Thank you](#thank-you)
 
@@ -20,78 +20,88 @@ npm i -D doogu
 
 ## What includes?
 
-This package contains the following dependencies, for development purposes:
+This package comes with a set of essential development dependencies:
 
-- [Prettier](https://prettier.io/) – An opinionated code formatter
-- [ESLint](https://eslint.org/) – Pluggable JavaScript linter
-- [SWC](https://swc.rs/) – An extensible Rust-based platform for the next generation of fast developer tools
 - [Typescript](https://www.typescriptlang.org/) – A language for application-scale JavaScript
-- [Jest](https://github.com/avajs/ava) – A delightful JavaScript Testing Framework
-- [chokidar-cli](https://www.npmjs.com/package/chokidar-cli) – Fast `cross-platform` command line utility to watch file system changes
+- [Vite](https://vitejs.dev/) – Next generation frontend tooling
+- [Vitest](https://www.npmjs.com/package/chokidar-cli) – A Vite-native unit test framework. It's fast!
+- [ESLint](https://eslint.org/) – Pluggable JavaScript linter
+- [Prettier](https://prettier.io/) – An opinionated code formatter
 
 ## Shareable configs
 
-The configuration file that can be use with other projects.
+Doogu provides shareable configs for ESLint, Prettier, and Semantic Release that can be reused across projects.
 
-### `tsconfig`
+### ESLint Configuration
 
-Extending the shareable config for TypeScript in `tsconfig.json` file:
-
-```json
-{
-  "extends": "doogu/config/tsconfig.json"
-}
-```
-
-### `eslint`
-
-Extending the shareable config for ESLint in `package.json` file:
+To extend the shareable ESLint configuration in your `package.json` file, add the following:
 
 ```json
 {
-  "name": "mypackage",
-  "version": "1.0.0",
   "eslintConfig": {
-    "extends": "./node_modules/doogu/config/eslint.json"
-  },
-  "eslintIgnore": ["hello.ts", "world.ts"]
+    "extends": "doogu"
+  }
 }
 ```
 
-### `prettier`
+### Prettier Configuration
 
-Extending the shareable config for Prettier in `package.json` file:
+To extend the shareable Prettier configuration in your `package.json` file, add the following:
 
 ```json
 {
-  "name": "mypackage",
-  "version": "1.0.0",
-  "prettier": "doogu/config/prettier.json"
+  "prettier": "doogu"
 }
 ```
 
-## Scripts
+### Semantic Release Configuration
 
-The commands that can be use in `package.json` file:
+To extend the shareable Semantic Release config in your `package.json` file, add the following:
 
 ```json
 {
-  "name": "mypackage",
-  "version": "1.0.0",
+  "release": "doogu"
+}
+```
+
+## NPM Scripts
+
+You can utilize the following commands in your `package.json` file:
+
+```json
+{
   "scripts": {
-    "start": "npm run build && npm run watch",
-    "watch": "chokidar \"src/*.ts\" -c \"npm run build\"",
-    "lint": "tsc --noEmit && eslint \"./src\" --ext \".ts\" --cache --cache-location \"node_modules/.cache/.eslintcache\"",
-    "build": "swc \"./src\" -d \"dist\" && tsc -d --emitDeclarationOnly --outDir \"dist\"",
-    "test": "node --experimental-vm-modules --no-warnings ./node_modules/jest/bin/jest.js --verbose",
-    "coverage": "npm test -- --coverage"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  }
+}
+```
+
+Or do anything you want:
+
+```json
+{
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "npm run types && vite build --ssr src/index.ts --emptyOutDir=false --watch",
+    "build": "vite build --ssr src/index.ts && npm run types",
+    "test": "vitest --ui",
+    "coverage": "vitest run --coverage",
+    "types": "tsc -d --emitDeclarationOnly --outDir ./dist && resolve-tspaths -o ./dist",
+    "lint": "tsc --noEmit && eslint .",
+    "format": "prettier --write ."
   }
 }
 ```
 
 ## Contributing
 
-We 💛&nbsp; issues.
+We 💛 issues.
 
 When committing, please conform to [the semantic-release commit standards](https://www.conventionalcommits.org/). Please install `commitizen` and the adapter globally, if you have not already.
 
@@ -107,4 +117,4 @@ git add . && git cz
 
 ## Thank you
 
-A project by [Stilearning](https://stilearning.com) &copy; 2022.
+A project by [Stilearning](https://stilearning.com) &copy; 2022-2023.
