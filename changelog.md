@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/bent10/doogu/compare/v3.1.0...v3.1.1) (2023-07-17)
+
+
+### Bug Fixes
+
+* **deps:** reverts `@tsconfig/node12` ([b09d925](https://github.com/bent10/doogu/commit/b09d925564e3e77b5a1c9e96ceaf9af2c1ae6431))
+
 # [3.1.0](https://github.com/bent10/doogu/compare/v3.0.0...v3.1.0) (2023-07-17)
 
 
