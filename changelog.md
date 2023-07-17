@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/bent10/doogu/compare/v3.0.0...v3.1.0) (2023-07-17)
+
+
+### Features
+
+* **deps:** add `resolve-tspaths` ([bfe1ff2](https://github.com/bent10/doogu/commit/bfe1ff2d37f2eea3bb6c8f1fbd8c338cd60f565e))
+
 # [3.0.0](https://github.com/bent10/doogu/compare/v2.4.151...v3.0.0) (2023-07-17)
 
 
