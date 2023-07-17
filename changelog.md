@@ -1,3 +1,10 @@
+## [3.1.2](https://github.com/bent10/doogu/compare/v3.1.1...v3.1.2) (2023-07-17)
+
+
+### Bug Fixes
+
+* shareable configs ([26baef7](https://github.com/bent10/doogu/commit/26baef7977af508e8752f94864ed2746e791582a))
+
 ## [3.1.1](https://github.com/bent10/doogu/compare/v3.1.0...v3.1.1) (2023-07-17)
 
 
