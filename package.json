@@ -23,17 +23,12 @@
     "doogu"
   ],
   "files": [
+    ".eslintrc",
     ".prettierrc",
-    "config",
+    "changelog.md",
     "readme.md",
     "license"
   ],
-  "eslintConfig": {
-    "extends": "./config/eslint.json"
-  },
-  "scripts": {
-    "test": "eslint \"./config\" --ext \".js,.json\" --cache --cache-location \"node_modules/.cache/.eslintcache\""
-  },
   "dependencies": {
     "@types/node": "^18.16.19",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
