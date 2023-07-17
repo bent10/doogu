@@ -23,6 +23,7 @@
     "doogu"
   ],
   "files": [
+    ".prettierrc",
     "config",
     "readme.md",
     "license"
@@ -30,7 +31,6 @@
   "eslintConfig": {
     "extends": "./config/eslint.json"
   },
-  "prettier": "./config/prettier.json",
   "scripts": {
     "test": "eslint \"./config\" --ext \".js,.json\" --cache --cache-location \"node_modules/.cache/.eslintcache\""
   },
@@ -44,6 +44,7 @@
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "jest": "^28.1.3",
+    "prettier": "^3.0.0",
     "typescript": "^4.9.5",
     "vite": "^4.4.4"
   },
