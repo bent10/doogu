@@ -39,7 +39,7 @@ To extend the shareable ESLint configuration in your `package.json` file, add th
 ```json
 {
   "eslintConfig": {
-    "extends": "doogu/eslint"
+    "extends": "./node_modules/doogu/eslint"
   }
 }
 ```
