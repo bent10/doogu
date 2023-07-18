@@ -1,3 +1,10 @@
+## [3.1.5](https://github.com/bent10/doogu/compare/v3.1.4...v3.1.5) (2023-07-18)
+
+
+### Bug Fixes
+
+* unexpected token m in JSON at position 0 ([ae040f4](https://github.com/bent10/doogu/commit/ae040f4e6f13dbf7ae3e3d14371ff346c9d143d0))
+
 ## [3.1.4](https://github.com/bent10/doogu/compare/v3.1.3...v3.1.4) (2023-07-18)
 
 
