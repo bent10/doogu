@@ -24,7 +24,7 @@
   ],
   "files": [
     "changelog.md",
-    "eslint.js",
+    "eslint.json",
     "license",
     "prettier.json",
     "readme.md",
