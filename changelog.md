@@ -1,3 +1,10 @@
+## [3.1.3](https://github.com/bent10/doogu/compare/v3.1.2...v3.1.3) (2023-07-18)
+
+
+### Bug Fixes
+
+* eslint shareable config example ([9c4beae](https://github.com/bent10/doogu/commit/9c4beaef6b1bc8f32c12ab59e4814e826dbcb66d))
+
 ## [3.1.2](https://github.com/bent10/doogu/compare/v3.1.1...v3.1.2) (2023-07-17)
 
 
