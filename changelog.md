@@ -1,3 +1,10 @@
+## [3.1.4](https://github.com/bent10/doogu/compare/v3.1.3...v3.1.4) (2023-07-18)
+
+
+### Bug Fixes
+
+* update `files` field ([7b385c4](https://github.com/bent10/doogu/commit/7b385c4d416e9c53d7594f96aff09962e43fecba))
+
 ## [3.1.3](https://github.com/bent10/doogu/compare/v3.1.2...v3.1.3) (2023-07-18)
 
 
