@@ -1,3 +1,10 @@
+## [3.1.7](https://github.com/bent10/doogu/compare/v3.1.6...v3.1.7) (2023-07-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to ^20.4.3 ([b93ae5e](https://github.com/bent10/doogu/commit/b93ae5e61ed9f5a1ed14306867401fedcf9bbdf0))
+
 ## [3.1.6](https://github.com/bent10/doogu/compare/v3.1.5...v3.1.6) (2023-07-20)
 
 
