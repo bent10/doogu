@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/bent10/doogu/compare/v3.1.7...v3.2.0) (2023-07-22)
+
+
+### Features
+
+* **eslint:** add `ignorePatterns` field ([702ab0b](https://github.com/bent10/doogu/commit/702ab0b44df96134289d7d7a3d0187414e5fba02))
+
 ## [3.1.7](https://github.com/bent10/doogu/compare/v3.1.6...v3.1.7) (2023-07-22)
 
 
