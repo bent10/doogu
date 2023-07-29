@@ -9,6 +9,7 @@ A wrapper around modern JavaScript tools.
   - [Prettier Configuration](#prettier-configuration)
   - [Semantic Release Configuration](#semantic-release-configuration)
 - [NPM Scripts](#npm-scripts)
+- [Related](#related)
 - [Contributing](#contributing)
 - [Thank you](#thank-you)
 
@@ -98,6 +99,11 @@ Or do anything you want:
   }
 }
 ```
+
+## Related
+
+- [module-starter](https://github.com/bent10/module-starter) – A bare-bones template designed for modern web projects
+- [monorepo-starter](https://github.com/bent10/monorepo-starter) – A monorepo starter template using native NPM workspace
 
 ## Contributing
 
