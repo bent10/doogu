@@ -42,7 +42,7 @@
     "prettier": "^3.0.0",
     "resolve-tspaths": "^0.8.14",
     "typescript": "^5.1.6",
-    "vite": "^4.4.6",
+    "vite": "^4.4.7",
     "vitest": "^0.33.0"
   },
   "config": {
