@@ -1,3 +1,11 @@
+## [3.2.3](https://github.com/bent10/doogu/compare/v3.2.2...v3.2.3) (2023-07-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to ^20.4.5 ([e908dfc](https://github.com/bent10/doogu/commit/e908dfc70dbf7b9fb4596e50390447d0b66c931d))
+* **deps:** update dependency vite to ^4.4.7 ([827bd1a](https://github.com/bent10/doogu/commit/827bd1a0d1df4ceae854d43b7935d427e32c59db))
+
 ## [3.2.2](https://github.com/bent10/doogu/compare/v3.2.1...v3.2.2) (2023-07-22)
 
 
