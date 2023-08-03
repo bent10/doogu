@@ -1,14 +1,8 @@
 {
-  "extends": ["config:base"],
-  "labels": ["dependencies"],
-  "rangeStrategy": "bump",
-  "schedule": [
-    "every weekend"
-  ],
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
-    }
+  "extends": [
+    "config:js-lib",
+    "schedule:weekends",
+    "schedule:automergeWeekly",
+    "npm:unpublishSafe"
   ]
 }
