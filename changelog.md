@@ -1,3 +1,11 @@
+## [3.2.7](https://github.com/bent10/doogu/compare/v3.2.6...v3.2.7) (2023-08-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v9 ([49cbfe2](https://github.com/bent10/doogu/commit/49cbfe2d2cdfb6c9f944dde121e635d1bfed331b))
+* **deps:** update vitest monorepo to ^0.34.0 ([57dc8a0](https://github.com/bent10/doogu/commit/57dc8a0e1785277768f2974475297aac1cef572a))
+
 ## [3.2.6](https://github.com/bent10/doogu/compare/v3.2.5...v3.2.6) (2023-07-29)
 
 
