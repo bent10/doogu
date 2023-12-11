@@ -1,3 +1,10 @@
+## [3.2.9](https://github.com/bent10/doogu/compare/v3.2.8...v3.2.9) (2023-12-11)
+
+
+### Bug Fixes
+
+* **deps:** update vitest monorepo to v1 ([6129f81](https://github.com/bent10/doogu/commit/6129f8151ace1571793b5e8fe4fbc5f089b61013))
+
 ## [3.2.8](https://github.com/bent10/doogu/compare/v3.2.7...v3.2.8) (2023-11-23)
 
 
