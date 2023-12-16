@@ -1,3 +1,10 @@
+## [3.2.10](https://github.com/bent10/doogu/compare/v3.2.9...v3.2.10) (2023-12-16)
+
+
+### Bug Fixes
+
+* **deps:** ncu ([ffca1e5](https://github.com/bent10/doogu/commit/ffca1e57d84e00f46fdc16afcf0a2e4ccd917f6c))
+
 ## [3.2.9](https://github.com/bent10/doogu/compare/v3.2.8...v3.2.9) (2023-12-11)
 
 
