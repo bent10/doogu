@@ -1,3 +1,17 @@
+# [3.3.0](https://github.com/bent10/doogu/compare/v3.2.13...v3.3.0) (2024-08-27)
+
+
+### Bug Fixes
+
+* **deps:** update typescript-eslint monorepo to v8 ([f249c7c](https://github.com/bent10/doogu/commit/f249c7cce24db9023b549c76903ea9463a823d51))
+* **deps:** update vitest monorepo to v2 ([a401531](https://github.com/bent10/doogu/commit/a4015318636ece233c26f615d8a95f434d3a9ad9))
+* ncu ([eb2428d](https://github.com/bent10/doogu/commit/eb2428d65250106b1cfb913566e95eae0d0af4a3))
+
+
+### Features
+
+* update `htmlWhitespaceSensitivity` value to `css` ([60d4f3b](https://github.com/bent10/doogu/commit/60d4f3b0790fbcc77cefc8c03c33cad8705d4a3f))
+
 ## [3.2.13](https://github.com/bent10/doogu/compare/v3.2.12...v3.2.13) (2024-04-14)
 
 
