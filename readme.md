@@ -35,14 +35,10 @@ Doogu provides shareable configs for ESLint, Prettier, and Semantic Release that
 
 ### ESLint Configuration
 
-To extend the shareable ESLint configuration in your `package.json` file, add the following:
+Create your `eslint.config.js` file, add the following:
 
-```json
-{
-  "eslintConfig": {
-    "extends": "./node_modules/doogu/eslint"
-  }
-}
+```js
+export { default } from 'doogu/eslint.config.js'
 ```
 
 ### Prettier Configuration
@@ -51,7 +47,7 @@ To extend the shareable Prettier configuration in your `package.json` file, add 
 
 ```json
 {
-  "prettier": "doogu/prettier.json"
+  "prettier": "doogu/prettier.config.js"
 }
 ```
 
@@ -93,7 +89,7 @@ Or do anything you want:
     "build": "vite build --ssr src/index.ts && npm run types",
     "test": "vitest --ui",
     "coverage": "vitest run --coverage",
-    "types": "tsc -d --emitDeclarationOnly --outDir ./dist && resolve-tspaths -o ./dist",
+    "types": "tsc -d --emitDeclarationOnly --outDir ./dist",
     "lint": "tsc --noEmit && eslint .",
     "format": "prettier --write ."
   }
@@ -123,4 +119,4 @@ git add . && git cz
 
 ## Thank you
 
-A project by [Stilearning](https://stilearning.com) &copy; 2022-2023.
+A project by [Stilearning](https://stilearning.com) &copy; 2022-2024.
