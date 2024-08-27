@@ -61,5 +61,5 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "prettier": "./prettier.json"
+  "prettier": "./prettier.config.js"
 }
