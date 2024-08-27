@@ -1,3 +1,10 @@
+## [4.0.2](https://github.com/bent10/doogu/compare/v4.0.1...v4.0.2) (2024-08-27)
+
+
+### Bug Fixes
+
+* **docs:** update shareable configs usage examples ([4dc769b](https://github.com/bent10/doogu/commit/4dc769b3b4e2cacd119aa027839887b7cf8a2a93))
+
 ## [4.0.1](https://github.com/bent10/doogu/compare/v4.0.0...v4.0.1) (2024-08-27)
 
 
