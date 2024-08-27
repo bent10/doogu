@@ -1,3 +1,16 @@
+# [4.0.0](https://github.com/bent10/doogu/compare/v3.3.0...v4.0.0) (2024-08-27)
+
+
+### Features
+
+* **eslint:** switch to ESLint's flat config format ([df925fd](https://github.com/bent10/doogu/commit/df925fd6626b516493442f51d7427e7eb8c07526))
+
+
+### BREAKING CHANGES
+
+* **eslint:** See [eslint
+migrationguide](https://eslint.org/docs/latest/use/configure/migration-guide)
+
 # [3.3.0](https://github.com/bent10/doogu/compare/v3.2.13...v3.3.0) (2024-08-27)
 
 
