@@ -28,6 +28,7 @@
   "exports": {
     "./*.js": {
       "import": "./*.js",
+      "require": "./*.cjs",
       "types": "./types/index.d.ts"
     }
   },
