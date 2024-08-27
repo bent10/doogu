@@ -23,12 +23,10 @@ jobs:
         with:
           node-version: 20.8.1 # required by semantic-release
       - run: npm i
+      - run: npm test
 
       - name: Installing release dependencies
-        run: |
-          npm i -g semantic-release
-          npm i -g @semantic-release/changelog
-          npm i -g @semantic-release/git
+        run: npm i -g semantic-release @semantic-release/changelog @semantic-release/git
 
       - name: Semantic release
         env:

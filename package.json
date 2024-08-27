@@ -24,19 +24,28 @@
     "vitest",
     "doogu"
   ],
+  "type": "module",
+  "exports": {
+    "./*.js": {
+      "import": "./*.js"
+    }
+  },
   "files": [
     "changelog.md",
-    "eslint.json",
+    "eslint.config.js",
     "license",
     "prettier.json",
     "readme.md",
     "release.config.js"
   ],
+  "scripts": {
+    "test": "eslint ."
+  },
   "dependencies": {
+    "@eslint/js": "^9.9.1",
     "@tsconfig/node16": "^16.1.3",
+    "@types/eslint__js": "^8.42.3",
     "@types/node": "^22.5.0",
-    "@typescript-eslint/eslint-plugin": "^8.3.0",
-    "@typescript-eslint/parser": "^8.3.0",
     "@vitest/coverage-v8": "^2.0.5",
     "@vitest/ui": "^2.0.5",
     "eslint": "^9.9.1",
@@ -44,6 +53,7 @@
     "prettier": "^3.3.3",
     "resolve-tspaths": "^0.8.19",
     "typescript": "^5.5.4",
+    "typescript-eslint": "^8.3.0",
     "vite": "^5.4.2",
     "vitest": "^2.0.5"
   },
