@@ -22,7 +22,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20.8.1 # required by semantic-release
-      - run: npm ci --legacy-peer-deps
+      - run: npm i
 
       - name: Installing release dependencies
         run: |
