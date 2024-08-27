@@ -34,7 +34,7 @@
     "changelog.md",
     "eslint.config.js",
     "license",
-    "prettier.json",
+    "prettier.config.js",
     "readme.md",
     "release.config.js"
   ],
