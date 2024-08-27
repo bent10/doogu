@@ -1,3 +1,11 @@
+## [4.0.4](https://github.com/bent10/doogu/compare/v4.0.3...v4.0.4) (2024-08-27)
+
+
+### Bug Fixes
+
+* add `.d.ts` file ([b14b5f9](https://github.com/bent10/doogu/commit/b14b5f946b88af12dfd75e507159d876ae50ba47))
+* add `release.config.cjs` ([ccb7f82](https://github.com/bent10/doogu/commit/ccb7f8202a3afd735e2f4c77e2d226869c785856))
+
 ## [4.0.3](https://github.com/bent10/doogu/compare/v4.0.2...v4.0.3) (2024-08-27)
 
 
