@@ -27,15 +27,18 @@
   "type": "module",
   "exports": {
     "./*.js": {
-      "import": "./*.js"
+      "import": "./*.js",
+      "types": "./types/index.d.ts"
     }
   },
   "files": [
+    "types",
     "changelog.md",
     "eslint.config.js",
     "license",
     "prettier.config.js",
     "readme.md",
+    "release.config.cjs",
     "release.config.js"
   ],
   "scripts": {
