@@ -1,3 +1,10 @@
+## [4.0.3](https://github.com/bent10/doogu/compare/v4.0.2...v4.0.3) (2024-08-27)
+
+
+### Bug Fixes
+
+* include `prettier.config.js` instead of `prettier.json` ([d985735](https://github.com/bent10/doogu/commit/d985735e570de9e3c0ec424e31db67d5851f4c71))
+
 ## [4.0.2](https://github.com/bent10/doogu/compare/v4.0.1...v4.0.2) (2024-08-27)
 
 
