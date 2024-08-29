@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/bent10/doogu/compare/v4.0.4...v4.1.0) (2024-08-29)
+
+
+### Features
+
+* **semantic-release:** prevent duplicate release comments on old PRs ([31080dc](https://github.com/bent10/doogu/commit/31080dc263d4e080fb0bc74d0575ae305754182a))
+
 ## [4.0.4](https://github.com/bent10/doogu/compare/v4.0.3...v4.0.4) (2024-08-27)
 
 
