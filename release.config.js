@@ -33,7 +33,13 @@ export default {
           'chore(release): ${nextRelease.version} \n\n${nextRelease.notes}'
       }
     ],
-    '@semantic-release/github',
+    [
+      '@semantic-release/github',
+      {
+        successComment: false,
+        failComment: false
+      }
+    ],
     '@semantic-release/npm'
   ]
 }
