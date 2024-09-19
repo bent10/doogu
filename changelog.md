@@ -1,3 +1,10 @@
+## [4.1.1](https://github.com/bent10/doogu/compare/v4.1.0...v4.1.1) (2024-09-19)
+
+
+### Bug Fixes
+
+* **deps:** ncu ([d1865f3](https://github.com/bent10/doogu/commit/d1865f348f2a7a742856cb8714cde6670637971d))
+
 # [4.1.0](https://github.com/bent10/doogu/compare/v4.0.4...v4.1.0) (2024-08-29)
 
 
