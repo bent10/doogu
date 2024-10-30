@@ -1,3 +1,11 @@
+## [4.1.2](https://github.com/bent10/doogu/compare/v4.1.1...v4.1.2) (2024-10-30)
+
+
+### Bug Fixes
+
+* **deps:** ncu ([25f1f13](https://github.com/bent10/doogu/commit/25f1f1320665f437c9c308ef8974b71df0466692))
+* **eslint:** add `languageOptions` ([ba6c4e2](https://github.com/bent10/doogu/commit/ba6c4e2f34e4934ca7947fc252fe4ffbed3f6310))
+
 ## [4.1.1](https://github.com/bent10/doogu/compare/v4.1.0...v4.1.1) (2024-09-19)
 
 
