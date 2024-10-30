@@ -6,6 +6,9 @@ import tseslint from 'typescript-eslint'
  * @type {import('typescript-eslint').ConfigWithExtends}
  */
 const customConfig = {
+  languageOptions: {
+    sourceType: 'module'
+  },
   ignores: ['**/coverage', '**/dist', '**/vendor']
 }
 
