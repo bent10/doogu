@@ -1,3 +1,10 @@
+# [4.2.0](https://github.com/bent10/doogu/compare/v4.1.2...v4.2.0) (2025-01-02)
+
+
+### Features
+
+* use Vite 6.x ([c60ceaa](https://github.com/bent10/doogu/commit/c60ceaa43aeade78236d04bf0de2e8fd3bbdb065))
+
 ## [4.1.2](https://github.com/bent10/doogu/compare/v4.1.1...v4.1.2) (2024-10-30)
 
 
