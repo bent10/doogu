@@ -1,3 +1,12 @@
+## [4.2.1](https://github.com/bent10/doogu/compare/v4.2.0...v4.2.1) (2025-08-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/eslint__js to v9 ([199ef7d](https://github.com/bent10/doogu/commit/199ef7d580f073e1933d3610e052c1063d97eaff))
+* **deps:** update dependency eslint-config-prettier to v10 ([c4a556e](https://github.com/bent10/doogu/commit/c4a556ea47bd94e0b5ca2765f57cb564881c2c97))
+* **deps:** update dependency vite to v7 ([83c0b69](https://github.com/bent10/doogu/commit/83c0b6972a64bdc81f39a3b11a5c09d23db22631))
+
 # [4.2.0](https://github.com/bent10/doogu/compare/v4.1.2...v4.2.0) (2025-01-02)
 
 
